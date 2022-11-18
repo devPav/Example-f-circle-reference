@@ -1,6 +1,7 @@
 use crate::List::{Cons, Nil};
 use std::cell::RefCell;
 use std::rc::Rc;
+use circles::{self, get_circle_references};
 
 #[derive(Debug)]
 enum List {
@@ -34,4 +35,7 @@ fn main() {
     // Раскомментируйте следующую строку кода, и вы увидите, что у нас цикл;
     // он переполнит стек.
     // println!("a следующий элемент = {:?}", a.trail());
+
+    //SECOND EXAMPLE w/o cons
+    get_circle_references();
 }
